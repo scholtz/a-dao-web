@@ -1,0 +1,75 @@
+{
+  "name": "wallet",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --mode production",
+    "lint": "vue-cli-service lint",
+    "i18n:report": "vue-cli-service i18n:report --src \"./src/**/*.?(js|vue)\" --locales \"./src/locales/**/*.json\""
+  },
+  "dependencies": {
+    "@popperjs/core": "*",
+    "@revolist/vue3-datagrid": "*",
+    "algosdk": "*",
+    "axios": "*",
+    "base64url": "*",
+    "bootstrap": "*",
+    "buffer": "*",
+    "check-password-strength": "*",
+    "copy-to-clipboard": "*",
+    "core-js": "*",
+    "crypto-js": "*",
+    "crypto-random-string": "*",
+    "cryptojs": "*",
+    "dexie": "*",
+    "leaflet": "*",
+    "moment": "*",
+    "page": "*",
+    "primeicons": "*",
+    "primevue": "*",
+    "qrcode-reader-vue3": "*",
+    "qrcode-vue3": "*",
+    "quill": "*",
+    "register-service-worker": "*",
+    "uuid": "*",
+    "vue-i18n": "*",
+    "vue-router": "*",
+    "vuex": "*",
+    "worker-loader": "*",
+    "xss": "*"
+  },
+  "devDependencies": {
+    "@intlify/vue-i18n-loader": "*",
+    "@vue-leaflet/vue-leaflet": "*",
+    "@vue/cli-plugin-babel": "*",
+    "@vue/cli-plugin-eslint": "*",
+    "@vue/cli-plugin-pwa": "*",
+    "@vue/cli-service": "*",
+    "@vue/compiler-sfc": "*",
+    "babel-eslint": "*",
+    "eslint": "^7",
+    "eslint-plugin-vue": "*",
+    "vue": "*",
+    "vue-cli-plugin-i18n": "*"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
