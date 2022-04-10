@@ -19,15 +19,15 @@
             <tr>
               <td>
                 <Checkbox
-                  id="CtokenCreated"
-                  v-model="CtokenCreated"
+                  id="C_TokenCreated"
+                  v-model="C_TokenCreated"
                   :binary="true"
                 />
               </td>
               <td>
                 <span
                   style="cursor: pointer"
-                  @click="CtokenCreated = !CtokenCreated"
+                  @click="C_TokenCreated = !C_TokenCreated"
                 >
                   Create your token. Use AWallet capabilities of doing multisign
                   operations to ensure enterprise level security or vanity
@@ -38,114 +38,267 @@
                 >
               </td>
               <td>
-                <button class="btn btn-primary form-control">Help</button>
+                <button
+                  class="btn form-control"
+                  :class="C_TokenCreatedAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
               </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Ensure decentralized onchain decision making using open
-                specifications and open source applications. Vote coin now
-                allows also encrypted voting, so that nobody can see other vote
-                cast while voting session is in progress.
+                <Checkbox id="C_VoteCoin" v-model="C_VoteCoin" :binary="true" />
+              </td>
+              <td>
+                <span style="cursor: pointer" @click="C_VoteCoin = !C_VoteCoin">
+                  Ensure decentralized onchain decision making using open
+                  specifications and open source applications. Vote coin now
+                  allows also encrypted voting, so that nobody can see other
+                  vote cast while voting session is in progress.
+                </span>
                 <a target="_blank" href="https://www.vote-coin.com"
                   >www.vote-coin.com</a
                 >
               </td>
-            </tr>
-            <tr>
-              <td><Checkbox /></td>
               <td>
-                Issue your tokens at exchanges.
-                <a target="_blank" href="https://app.algodex.com">Algodex</a> -
-                onchain orderbook trading platform, Automated market maker smart
-                contract webs -
-                <a target="_blank" href="https://app.pact.fi">Pact.Fi</a>,
-                <a target="_blank" href="https://app.tinyman.com">TinyMan</a>,
-                <a target="_blank" href="https://app.algofi.org/swap">AlgoFi</a
-                >,
-                <a target="_blank" href="https://app.humble.sh/pool"
-                  >HumbleSwap</a
-                >. We recommend to start with Pact.Fi 0,01% pool fee and TinyMan
-                and distribute AMM staking using tool below.
+                <button
+                  class="btn form-control"
+                  :class="C_VoteCoinAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
               </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Check your ASA price development at
+                <Checkbox id="C_IDO" v-model="C_IDO" :binary="true" />
+              </td>
+              <td>
+                <span style="cursor: pointer" @click="C_IDO = !C_IDO"
+                  >Issue your tokens at exchanges.
+                  <a target="_blank" href="https://app.algodex.com">Algodex</a>
+                  - onchain orderbook trading platform, Automated market maker
+                  smart contract webs -
+                  <a target="_blank" href="https://app.pact.fi">Pact.Fi</a>,
+                  <a target="_blank" href="https://app.tinyman.com">TinyMan</a>,
+                  <a target="_blank" href="https://app.algofi.org/swap"
+                    >AlgoFi</a
+                  >,
+                  <a target="_blank" href="https://app.humble.sh/pool"
+                    >HumbleSwap</a
+                  >. We recommend to start with Pact.Fi 0,01% pool fee and
+                  TinyMan and distribute AMM staking using tool below.
+                </span>
+              </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_IDOAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <Checkbox
+                  id="C_TinyChart"
+                  v-model="C_TinyChart"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_TinyChart = !C_TinyChart"
+                  >Check your ASA price development at
+                </span>
                 <a target="_blank" href="https://tinychart.org/asset/452399768"
                   >tinychart.org</a
                 >.
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_TinyChartAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Start building your community at discord. Customize our
+                <Checkbox id="C_ChatBot" v-model="C_ChatBot" :binary="true" />
+              </td>
+              <td>
+                <span style="cursor: pointer" @click="C_ChatBot = !C_ChatBot">
+                  Start building your community at discord. Customize our</span
+                >
                 <a
                   target="_blank"
                   href="https://github.com/scholtz/vote_coin-chatbot/"
                   >open source AI powered chat bot</a
                 >
-                for your needs.
+
+                <span style="cursor: pointer" @click="C_ChatBot = !C_ChatBot">
+                  for your needs.</span
+                >
+              </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_ChatBotAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
               </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Motivate people to hold your ASA - give them percentage of
-                return if they own minimum trashold - community staking program.
+                <Checkbox
+                  id="C_CommunityStaking"
+                  v-model="C_CommunityStaking"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_CommunityStaking = !C_CommunityStaking"
+                >
+                  Motivate people to hold your ASA - give them percentage of
+                  return if they own minimum trashold - community staking
+                  program.
+                </span>
                 <a
                   target="_blank"
                   href="https://github.com/scholtz/AlgorandStakingBot"
                   >https://github.com/scholtz/AlgorandStakingBot</a
                 >
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="
+                    C_CommunityStakingAction ? 'btn-primary' : 'btn-light'
+                  "
+                >
+                  Help
+                </button>
+              </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Motivate people to hold your ASA in AMM pools - give liquidity
-                providers percentage of return if they hold the money at the
-                pool of your selection
+                <Checkbox
+                  id="C_AMMStaking"
+                  v-model="C_AMMStaking"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_AMMStaking = !C_AMMStaking"
+                >
+                  Motivate people to hold your ASA in AMM pools - give liquidity
+                  providers percentage of return if they hold the money at the
+                  pool of your selection
+                </span>
                 <a
                   target="_blank"
                   href="https://github.com/scholtz/AlgorandAMMStakingBot"
                   >https://github.com/scholtz/AlgorandAMMStakingBot</a
                 >
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_AMMStakingAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Deliver your tokens to the investors on the market - define and
-                publish easy to understand and verifiable rules, and earn money
-                for your DAO activities
+                <Checkbox
+                  id="C_SellToken"
+                  v-model="C_SellToken"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_SellToken = !C_SellToken"
+                >
+                  Deliver your tokens to the investors on the market - define
+                  and publish easy to understand and verifiable rules, and earn
+                  money for your DAO activities
+                </span>
                 <a target="_blank" href="https://github.com/scholtz/tinyman-bot"
                   >https://github.com/scholtz/tinyman-bot</a
                 >
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_SellTokenAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Make your DAO visible in the ecosystem - Publish your products
-                and services also to our algorand directory.
+                <Checkbox
+                  id="C_AlgoDirectory"
+                  v-model="C_AlgoDirectory"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_AlgoDirectory = !C_AlgoDirectory"
+                >
+                  Make your DAO visible in the ecosystem - Publish your products
+                  and services also to our algorand directory.</span
+                >
                 <a target="_blank" href="https://www.a-dir.net"
                   >https://www.a-dir.net</a
                 >
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_AlgoDirectoryAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
             </tr>
             <tr>
-              <td><Checkbox /></td>
               <td>
-                Use our authentication tools. Open source ARC-0014 standard
-                implementation for algorand authentication, and hasura graphQL
-                server authentication webhook which allows verifying ARC-0014
-                authentication token and serving graphql data using asynchronous
-                subscriptions and providing users with the real time
-                authenticated data on your website.
+                <Checkbox
+                  id="C_AuthTools"
+                  v-model="C_AuthTools"
+                  :binary="true"
+                />
+              </td>
+              <td>
+                <span
+                  style="cursor: pointer"
+                  @click="C_AuthTools = !C_AuthTools"
+                >
+                  Use our authentication tools. Open source ARC-0014 standard
+                  implementation for algorand authentication, and hasura graphQL
+                  server authentication webhook which allows verifying ARC-0014
+                  authentication token and serving graphql data using
+                  asynchronous subscriptions and providing users with the real
+                  time authenticated data on your website.
+                </span>
                 <a
                   target="_blank"
                   href="https://github.com/scholtz/AlgorandAuthenticationDotNet"
@@ -157,8 +310,25 @@
                   >https://github.com/scholtz/HasuraAlgorandAuthWebHook</a
                 >
               </td>
+              <td>
+                <button
+                  class="btn form-control"
+                  :class="C_AuthToolsAction ? 'btn-primary' : 'btn-light'"
+                >
+                  Help
+                </button>
+              </td>
             </tr>
           </table>
+        </div>
+        <div class="col">
+          <div class="m-5">
+            <iframe
+              width="100%"
+              height="500px"
+              src="https://www.youtube.com/embed/M0KZvp7AJQs"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -176,16 +346,152 @@ export default {
   },
   data() {
     return {
-      CtokenCreated: true,
+      C_TokenCreated: true,
+      C_VoteCoin: false,
+      C_IDO: false,
+      C_TinyChart: false,
+      C_ChatBot: false,
+      C_CommunityStaking: false,
+      C_AMMStaking: false,
+      C_SellToken: false,
+      C_AlgoDirectory: false,
+      C_AuthTools: false,
     };
   },
+  computed: {
+    C_TokenCreatedAction() {
+      return !this.C_TokenCreated;
+    },
+    C_VoteCoinAction() {
+      return this.C_TokenCreated && !this.C_VoteCoin;
+    },
+    C_IDOAction() {
+      return this.C_TokenCreated && this.C_VoteCoin && !this.C_IDO;
+    },
+    C_TinyChartAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        !this.C_TinyChart
+      );
+    },
+    C_ChatBotAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        !this.C_ChatBot
+      );
+    },
+    C_CommunityStakingAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        this.C_ChatBot &&
+        !this.C_CommunityStaking
+      );
+    },
+    C_AMMStakingAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        this.C_ChatBot &&
+        this.C_CommunityStaking &&
+        !this.C_AMMStaking
+      );
+    },
+    C_SellTokenAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        this.C_ChatBot &&
+        this.C_CommunityStaking &&
+        this.C_AMMStaking &&
+        !this.C_SellToken
+      );
+    },
+    C_AlgoDirectoryAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        this.C_ChatBot &&
+        this.C_CommunityStaking &&
+        this.C_AMMStaking &&
+        this.C_SellToken &&
+        !this.C_AlgoDirectory
+      );
+    },
+    C_AuthToolsAction() {
+      return (
+        this.C_TokenCreated &&
+        this.C_VoteCoin &&
+        this.C_IDO &&
+        this.C_TinyChart &&
+        this.C_ChatBot &&
+        this.C_CommunityStaking &&
+        this.C_AMMStaking &&
+        this.C_SellToken &&
+        this.C_AlgoDirectory &&
+        !this.C_AuthTools
+      );
+    },
+  },
   watch: {
-    CtokenCreated() {
-      return localStorage.setItem("CtokenCreated", !!this.CtokenCreated);
+    C_TokenCreated() {
+      return localStorage.setItem("C_TokenCreated", !!this.C_TokenCreated);
+    },
+    C_VoteCoin() {
+      return localStorage.setItem("C_VoteCoin", !!this.C_VoteCoin);
+    },
+    C_IDO() {
+      return localStorage.setItem("C_IDO", !!this.C_IDO);
+    },
+    C_TinyChart() {
+      return localStorage.setItem("C_TinyChart", !!this.C_TinyChart);
+    },
+    C_ChatBot() {
+      return localStorage.setItem("C_ChatBot", !!this.C_ChatBot);
+    },
+    C_CommunityStaking() {
+      return localStorage.setItem(
+        "C_CommunityStaking",
+        !!this.C_CommunityStaking
+      );
+    },
+    C_AMMStaking() {
+      return localStorage.setItem("C_AMMStaking", !!this.C_AMMStaking);
+    },
+    C_SellToken() {
+      return localStorage.setItem("C_SellToken", !!this.C_SellToken);
+    },
+    C_AlgoDirectory() {
+      return localStorage.setItem("C_AlgoDirectory", !!this.C_AlgoDirectory);
+    },
+    C_AuthTools() {
+      return localStorage.setItem("C_AuthTools", !!this.C_AuthTools);
     },
   },
   mounted() {
-    this.CtokenCreated = !!localStorage.getItem("CtokenCreated");
+    this.C_TokenCreated = !!localStorage.getItem("C_TokenCreated");
+    this.C_VoteCoin = !!localStorage.getItem("C_VoteCoin");
+    this.C_IDO = !!localStorage.getItem("C_IDO");
+    this.C_TinyChart = !!localStorage.getItem("C_TinyChart");
+    this.C_ChatBot = !!localStorage.getItem("C_ChatBot");
+    this.C_CommunityStaking = !!localStorage.getItem("C_CommunityStaking");
+    this.C_AMMStaking = !!localStorage.getItem("C_AMMStaking");
+    this.C_SellToken = !!localStorage.getItem("C_SellToken");
+    this.C_AlgoDirectory = !!localStorage.getItem("C_AlgoDirectory");
+    this.C_AuthTools = !!localStorage.getItem("C_AuthTools");
   },
 };
 </script>
