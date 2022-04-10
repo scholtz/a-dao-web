@@ -2,12 +2,9 @@
   <PublicLayout>
     <h1>Terms and conditions, Privacy policy, GDPR</h1>
     <ol>
+      <li>This website provides services for DAOs running on algorand.</li>
       <li>
-        This website provides service of directory service for algroand related
-        products or services.
-      </li>
-      <li>
-        Directory service is provided at address www.a-dir.net by the
+        DAO tools service is provided at address www.a-dao.net by the
         <i>Company</i> Scholtz &amp; Company, jsa. Company identifier: 51 882
         272, VAT ID: SK2120828105. Company seat: Švabinského 21, 851 01
         Bratislava, Slovakia.

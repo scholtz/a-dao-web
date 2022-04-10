@@ -38,12 +38,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_TokenCreatedAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=M0KZvp7AJQs"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -133,8 +134,8 @@
               </td>
               <td>
                 <span style="cursor: pointer" @click="C_ChatBot = !C_ChatBot">
-                  Start building your community at discord. Customize our</span
-                >
+                  Start building your community at discord. Customize our
+                </span>
                 <a
                   target="_blank"
                   href="https://github.com/scholtz/vote_coin-chatbot/"
@@ -264,8 +265,8 @@
                   @click="C_AlgoDirectory = !C_AlgoDirectory"
                 >
                   Make your DAO visible in the ecosystem - Publish your products
-                  and services also to our algorand directory.</span
-                >
+                  and services also to our algorand directory.
+                </span>
                 <a target="_blank" href="https://www.a-dir.net"
                   >https://www.a-dir.net</a
                 >
@@ -346,7 +347,7 @@ export default {
   },
   data() {
     return {
-      C_TokenCreated: true,
+      C_TokenCreated: false,
       C_VoteCoin: false,
       C_IDO: false,
       C_TinyChart: false,
@@ -482,16 +483,18 @@ export default {
     },
   },
   mounted() {
-    this.C_TokenCreated = !!localStorage.getItem("C_TokenCreated");
-    this.C_VoteCoin = !!localStorage.getItem("C_VoteCoin");
-    this.C_IDO = !!localStorage.getItem("C_IDO");
-    this.C_TinyChart = !!localStorage.getItem("C_TinyChart");
-    this.C_ChatBot = !!localStorage.getItem("C_ChatBot");
-    this.C_CommunityStaking = !!localStorage.getItem("C_CommunityStaking");
-    this.C_AMMStaking = !!localStorage.getItem("C_AMMStaking");
-    this.C_SellToken = !!localStorage.getItem("C_SellToken");
-    this.C_AlgoDirectory = !!localStorage.getItem("C_AlgoDirectory");
-    this.C_AuthTools = !!localStorage.getItem("C_AuthTools");
+    this.C_TokenCreated = JSON.parse(localStorage.getItem("C_TokenCreated"));
+    this.C_VoteCoin = JSON.parse(localStorage.getItem("C_VoteCoin"));
+    this.C_IDO = JSON.parse(localStorage.getItem("C_IDO"));
+    this.C_TinyChart = JSON.parse(localStorage.getItem("C_TinyChart"));
+    this.C_ChatBot = JSON.parse(localStorage.getItem("C_ChatBot"));
+    this.C_CommunityStaking = JSON.parse(
+      localStorage.getItem("C_CommunityStaking")
+    );
+    this.C_AMMStaking = JSON.parse(localStorage.getItem("C_AMMStaking"));
+    this.C_SellToken = JSON.parse(localStorage.getItem("C_SellToken"));
+    this.C_AlgoDirectory = JSON.parse(localStorage.getItem("C_AlgoDirectory"));
+    this.C_AuthTools = JSON.parse(localStorage.getItem("C_AuthTools"));
   },
 };
 </script>
