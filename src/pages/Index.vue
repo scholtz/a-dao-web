@@ -63,12 +63,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_VoteCoinAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://www.youtube.com/watch?v=D8EMw8ddnyw"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -93,12 +94,13 @@
                 </span>
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_IDOAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://docs.pact.fi/pact/how-to/pools"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -120,12 +122,13 @@
                 >.
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_TinyChartAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://docs.pact.fi/pact/how-to/pools"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -147,12 +150,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_ChatBotAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://github.com/scholtz/vote_coin-chatbot/blob/main/README.md"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -179,14 +183,15 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="
                     C_CommunityStakingAction ? 'btn-primary' : 'btn-light'
                   "
+                  target="_blank"
+                  href="https://github.com/scholtz/AlgorandStakingBot/blob/master/README.md"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -213,12 +218,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_AMMStakingAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://github.com/scholtz/AlgorandAMMStakingBot"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -243,12 +249,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_SellTokenAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://github.com/scholtz/tinyman-bot"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -272,12 +279,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_AlgoDirectoryAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://www.a-dir.net/add"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
             <tr>
@@ -312,12 +320,13 @@
                 >
               </td>
               <td>
-                <button
+                <a
                   class="btn form-control"
                   :class="C_AuthToolsAction ? 'btn-primary' : 'btn-light'"
+                  target="_blank"
+                  href="https://github.com/scholtz/HasuraAlgorandAuthWebHook"
+                  >Help</a
                 >
-                  Help
-                </button>
               </td>
             </tr>
           </table>
@@ -327,7 +336,7 @@
             <iframe
               width="100%"
               height="500px"
-              src="https://www.youtube.com/embed/M0KZvp7AJQs"
+              src="https://www.youtube.com/embed/b513VFpKeII"
             />
           </div>
         </div>
