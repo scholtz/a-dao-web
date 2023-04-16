@@ -4,7 +4,7 @@
       {{ t }}
     </a>
     <div class="text-center">
-      &copy; 2022 Scholtz &amp; Company, jsa |
+      &copy; 2023 Scholtz &amp; Company, jsa |
       <RouterLink to="/terms">Terms and Conditions, GDPR</RouterLink>
     </div>
   </footer>
