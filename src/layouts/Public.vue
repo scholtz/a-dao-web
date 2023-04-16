@@ -8,7 +8,7 @@
       <slot></slot>
     </div>
     <slot name="header">
-      <Footer />
+      <Footer2 />
     </slot>
   </div>
 </template>
@@ -16,12 +16,12 @@
 <script>
 import Toast from "primevue/toast";
 import Navbar from "../components/Navbar.vue";
-import Footer from "../components/Footer.vue";
+import Footer2 from "../components/Footer.vue";
 import { mapActions } from "vuex";
 export default {
   components: {
     Navbar,
-    Footer,
+    Footer2,
     Toast,
   },
   created() {

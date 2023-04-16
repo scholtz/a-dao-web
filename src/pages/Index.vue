@@ -117,8 +117,8 @@
                   @click="C_TinyChart = !C_TinyChart"
                   >Check your ASA price development at
                 </span>
-                <a target="_blank" href="https://tinychart.org/asset/452399768"
-                  >tinychart.org</a
+                <a target="_blank" href="https://vestige.fi/asset/452399768"
+                  >Vestige</a
                 >.
               </td>
               <td>
@@ -126,7 +126,7 @@
                   class="btn form-control"
                   :class="C_TinyChartAction ? 'btn-primary' : 'btn-light'"
                   target="_blank"
-                  href="https://docs.pact.fi/pact/how-to/pools"
+                  href="https://vestige.fi"
                   >Help</a
                 >
               </td>
@@ -173,43 +173,7 @@
                   @click="C_CommunityStaking = !C_CommunityStaking"
                 >
                   Motivate people to hold your ASA - give them percentage of
-                  return if they own minimum trashold - community staking
-                  program.
-                </span>
-                <a
-                  target="_blank"
-                  href="https://github.com/scholtz/AlgorandStakingBot"
-                  >https://github.com/scholtz/AlgorandStakingBot</a
-                >
-              </td>
-              <td>
-                <a
-                  class="btn form-control"
-                  :class="
-                    C_CommunityStakingAction ? 'btn-primary' : 'btn-light'
-                  "
-                  target="_blank"
-                  href="https://github.com/scholtz/AlgorandStakingBot/blob/master/README.md"
-                  >Help</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <Checkbox
-                  id="C_AMMStaking"
-                  v-model="C_AMMStaking"
-                  :binary="true"
-                />
-              </td>
-              <td>
-                <span
-                  style="cursor: pointer"
-                  @click="C_AMMStaking = !C_AMMStaking"
-                >
-                  Motivate people to hold your ASA in AMM pools - give liquidity
-                  providers percentage of return if they hold the money at the
-                  pool of your selection
+                  return if they own minimum trashold or if they own the AMM token. Fairly distribute your tokens.
                 </span>
                 <a
                   target="_blank"
@@ -220,40 +184,11 @@
               <td>
                 <a
                   class="btn form-control"
-                  :class="C_AMMStakingAction ? 'btn-primary' : 'btn-light'"
+                  :class="
+                    C_CommunityStakingAction ? 'btn-primary' : 'btn-light'
+                  "
                   target="_blank"
-                  href="https://github.com/scholtz/AlgorandAMMStakingBot"
-                  >Help</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <Checkbox
-                  id="C_SellToken"
-                  v-model="C_SellToken"
-                  :binary="true"
-                />
-              </td>
-              <td>
-                <span
-                  style="cursor: pointer"
-                  @click="C_SellToken = !C_SellToken"
-                >
-                  Deliver your tokens to the investors on the market - define
-                  and publish easy to understand and verifiable rules, and earn
-                  money for your DAO activities
-                </span>
-                <a target="_blank" href="https://github.com/scholtz/tinyman-bot"
-                  >https://github.com/scholtz/tinyman-bot</a
-                >
-              </td>
-              <td>
-                <a
-                  class="btn form-control"
-                  :class="C_SellTokenAction ? 'btn-primary' : 'btn-light'"
-                  target="_blank"
-                  href="https://github.com/scholtz/tinyman-bot"
+                  href="https://github.com/scholtz/AlgorandAMMStakingBot/blob/master/README.md"
                   >Help</a
                 >
               </td>
@@ -272,10 +207,10 @@
                   @click="C_AlgoDirectory = !C_AlgoDirectory"
                 >
                   Make your DAO visible in the ecosystem - Publish your products
-                  and services also to our algorand directory.
+                  and services also to the official algorand directory.
                 </span>
-                <a target="_blank" href="https://www.a-dir.net"
-                  >https://www.a-dir.net</a
+                <a target="_blank" href="https://ecosystem.algorand.com/"
+                  >https://ecosystem.algorand.com/</a
                 >
               </td>
               <td>
@@ -283,7 +218,7 @@
                   class="btn form-control"
                   :class="C_AlgoDirectoryAction ? 'btn-primary' : 'btn-light'"
                   target="_blank"
-                  href="https://www.a-dir.net/add"
+                  href="https://ecosystem.algorand.com/login?redirectTo=/submit-project"
                   >Help</a
                 >
               </td>
@@ -333,11 +268,13 @@
         </div>
         <div class="col">
           <div class="m-5">
-            <iframe
+            <img src="/mega-ace.png" 
+              width="800"/>
+            <!--<iframe
               width="100%"
               height="500px"
               src="https://www.youtube.com/embed/b513VFpKeII"
-            />
+            />-->
           </div>
         </div>
       </div>
