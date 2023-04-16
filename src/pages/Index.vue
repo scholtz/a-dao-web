@@ -31,10 +31,13 @@
                 >
                   Create your token. Use AWallet capabilities of doing multisign
                   operations to ensure enterprise level security or vanity
-                  account.
+                  account. AWallet supports multisig ledger protected accounts with combination of wallet connect so that user can use Algorand DeFi in user friendly manner.
                 </span>
                 <a target="_blank" href="https://www.a-wallet.net"
                   >Create your wallet</a
+                >, 
+                <a target="_blank" href="https://github.com/scholtz/wallet"
+                  >Source code</a
                 >
               </td>
               <td>
@@ -42,7 +45,7 @@
                   class="btn form-control"
                   :class="C_TokenCreatedAction ? 'btn-primary' : 'btn-light'"
                   target="_blank"
-                  href="https://www.youtube.com/watch?v=M0KZvp7AJQs"
+                  href="https://www.youtube.com/watch?v=w8ifGtC3Y1Q"
                   >Help</a
                 >
               </td>
@@ -60,6 +63,9 @@
                 </span>
                 <a target="_blank" href="https://www.vote-coin.com"
                   >www.vote-coin.com</a
+                >, 
+                <a target="_blank" href="https://www.vote-coin.com/solutions-and-tutorials/open-source-solutions"
+                  >Source codes of multiple applications</a
                 >
               </td>
               <td>
