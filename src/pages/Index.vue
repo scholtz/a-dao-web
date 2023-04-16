@@ -274,13 +274,11 @@
         </div>
         <div class="col">
           <div class="m-5">
-            <img src="/mega-ace.png" 
-              width="800"/>
-            <!--<iframe
+            <iframe
               width="100%"
               height="500px"
-              src="https://www.youtube.com/embed/b513VFpKeII"
-            />-->
+              src="https://www.youtube.com/embed/L1vegLTOZrE"
+            />
           </div>
         </div>
       </div>
